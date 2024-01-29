@@ -1,4 +1,4 @@
-package com.decerto.szymon.domain;
+package com.decerto.stringstats.domain;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;

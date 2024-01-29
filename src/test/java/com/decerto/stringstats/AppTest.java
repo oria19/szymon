@@ -1,4 +1,4 @@
-package com.decerto.szymon;
+package com.decerto.stringstats;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

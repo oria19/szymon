@@ -1,4 +1,4 @@
-package com.decerto.szymon.task;
+package com.decerto.stringstats.task;
 
 import org.junit.jupiter.api.Test;
 

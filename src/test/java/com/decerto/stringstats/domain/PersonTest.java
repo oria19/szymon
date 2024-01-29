@@ -1,4 +1,4 @@
-package com.decerto.szymon.domain;
+package com.decerto.stringstats.domain;
 
 import org.jetbrains.annotations.NotNull;
 import org.junit.jupiter.api.Test;
