@@ -13,7 +13,7 @@ class GroupAndAverageCounterTest {
     GroupAndAverageCounter sut = new GroupAndAverageCounter();
 
     @Test
-    void testNotBlankString() {
+    void tesCounting() {
         Map<String, GroupAndAverageCounter.Result> result = sut.groupAndCount(inputParams());
         assertEquals(new GroupAndAverageCounter.Result(new BigDecimal("4.23"), 363), result.get("x"));
         assertEquals(new GroupAndAverageCounter.Result(new BigDecimal("3.76"), 296), result.get("y"));

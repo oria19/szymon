@@ -1,5 +1,7 @@
 package com.decerto.groupandaverage;
 
+import java.math.BigDecimal;
+
 class InputParam {
 
     public InputParam(String groupCode, int productsNumber, int totalPrice) {
@@ -22,6 +24,10 @@ class InputParam {
 
     public int getProductsNumber() {
         return productsNumber;
+    }
+
+    public BigDecimal getProductsNumberAsBigDecimal() {
+        return BigDecimal.valueOf(productsNumber);
     }
 
     public void setProductsNumber(int productsNumber) {
