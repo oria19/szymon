@@ -1,0 +1,2 @@
+1. Podaj wszystkich autorów, którzy nie wydali książki w 2010
+2. Podaj wszystkich autorów, którzy wydali co najmniej 2 ksiązki i liczbę tych wydań

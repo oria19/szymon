@@ -1,7 +1,11 @@
 package com.decerto.stringstats.task;
 
+import org.apache.commons.lang3.StringUtils;
+
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class StringStatistics {
 
@@ -12,7 +16,12 @@ public class StringStatistics {
     }
 
     public Map<String, Long> letterStatistics() {
-        return Map.of("a", 5l, "b", 2l, "c", 2l);
+        return this.strings.stream()
+                .map(inputString -> inputString.split(""))
+                .flatMap(Arrays::stream)
+                .filter(StringUtils::isAlpha)
+                .map(String::toLowerCase)
+                .collect(Collectors.groupingBy(i -> i, Collectors.counting()));
     }
 
 }

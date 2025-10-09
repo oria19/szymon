@@ -9,6 +9,13 @@ import java.util.Map;
 
 class GroupAndAverageCounter {
 
+    /**
+     * AGREGATOR DANCYCH
+     * Dla listy wejściowej napisz funkcyjnie taką implementację, która zgrupuje elementy po InputParam.groupCode
+     * a następnie policzy średnią z InputParam.productsNumber w każdej grupie
+     * oraz zsumuje productsNumber InputParam.totalPrice
+     * Zwróć Map<KOD_GRUPY, Result>
+     */
     Map<String, Result> groupAndCount(List<InputParam> inputList) {
         return Map.of(
                 "x", new GroupAndAverageCounter.Result(new BigDecimal("4.23"), 363),
