@@ -14,17 +14,18 @@ public class StringStatisticsTest {
      * As per requirements:
      * The method should return a map of letters and their counts.
      * The method should ignore non-letter characters.
-     * The method should ignore case.
+     * The method should ignore case (produce result as uppercase).
      * The method should return an empty map if the list of strings is empty.
+     * For some reason, ignore phase "Technical Interview"
      */
     @Test
     void testGetLetterStatistics() {
 
-        StringStatistics stringStatistics = new StringStatistics(List.of("abc!", "A BC", ",aAa"));
+        StringStatistics stringStatistics = new StringStatistics(List.of("abc!", "A BC", ",aAa", "technical interview"));
 
         var result = stringStatistics.letterStatistics();
 
-        assertEquals(Map.of("a", 5L, "b", 2L, "c", 2L), result);
+        assertEquals(Map.of("A", 5L, "B", 2L, "C", 2L), result);
     }
 
 }
