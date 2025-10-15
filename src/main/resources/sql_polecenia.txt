@@ -1,2 +1,3 @@
 1. Podaj wszystkich autorów, którzy nie wydali książki w 2010
 2. Podaj wszystkich autorów, którzy wydali co najmniej 2 ksiązki i liczbę tych wydań
+3. Podaj wszystkie książki autorów, który wydali co najmniej 10 książek
